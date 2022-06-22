@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/charopinho-games.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <title>Filme - Ratinho Filmes</title>
+</head>
+
+<body>
+
+    !--Barra de Navegação-->
+    <nav class="navigation">
+
+
+        <!--Botão do menu-->
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+        </label>
+
+        <!--Logo-->
+        <a href="./index.html" class="logo">
+            ラチネオ<span>.Filmes</span>
+        </a>
+
+        <!--Menu-->
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Lançamentos</a></li>
+            <li><a href="#">Em destaque</a></li>
+            <li><a href="#">Entrevistas & makingof</a></li>
+            <li><a href="#">Novidades</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+
+        <!--Barra de Pesquisa-->
+
+        <form action="" class="search-box">
+            <input type="text" name="search" placeholder="Pesquisar" class="search-input" required />
+            <button type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    </nav>
+    <!--Fim da barra de Navegação-->
+
+    <!--Benner do filme-->
+    <section class="movie-banner">
+        <!--Imagem-->
+        <div class="m-banner-img">
+            <img src="./images-detalhes/morbius-banner.jpg" />
+        </div>
+
+        <!--Conteúdo-->
+        <div class="banner-container">
+            <!--Conteúdo do título-->
+            <div class="title-container">
+                <!--Topo do título-->
+                <div class="title-top">
+                    <!--Título-->
+                    <div class="movie-title">
+                        <h1>Morbius</h1>
+                    </div>
+                    <!--Mais sobre o filme-->
+                    <div class="more-about-movie">
+                        <span class="bao">BRABO</span>
+                        <div class="rating">
+                            Parece bão <img src="./images/IMDb-icon.png" alt="imbd">
+                        </div>
+                        <span>Mês 2022</span>
+                        <span>Marromeno 2 horas</span>
+                    </div>
+
+                </div>
+
+                <!--Fundinho do título-->
+                <div class="title-bottom">
+                    <!--Categorias-->
+                    <div class="category">
+                        <strong>Categoria</strong><br />
+                        <a href="#">Ação</a>,<a href="#">Aventura</a>,<a href="#">Fantasia</a>
+                    </div>
+                    <!--Botão do trailer-->
+                    <a href="https://www.youtube.com/watch?v=oZ6iiRrz1SY" class="watch-btn">Vê o trailer, meu nobre</a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!--Fim do banner-->
+
+    <!--Detalhes do filme-->
+    <section class="movie-details">
+        <strong>Morbius</strong>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi tempore, ea unde sit exercitationem itaque
+            ipsa. Distinctio non omnis eius obcaecati dolorem nemo alias? At amet harum ratione quia sed. Lorem ipsum
+            dolor, sit amet consectetur adipisicing elit. Cupiditate deleniti, doloremque, nihil non nemo at sequi
+            provident sed quas illo neque quos voluptas. Voluptas, temporibus? At a quos tempore tenetur?Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Exercitationem placeat labore voluptates vitae iure quam beatae
+            perspiciatis cupiditate aut tempora obcaecati atque necessitatibus odit eos sit magnam, ad, accusantium qui.
+        </p>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!--Footer-->
+    <footer>
+        <!--Logo do footer-->
+        <a href="./index.html" class="logo">
+            ラチネオ<span>.Filmes</span>
+        </a>
+        <!--Copyright-->
+        <span class="copyright">
+            Copyright 2022 - Ratinho Filmes®
+        </span>
+        <img src="./images/persona_default.png" class="xaropinho" onclick="audio.play();">
+    </footer>
+    <!--Fim do footer-->
+
+    <!--JQuery-->
+    <script src="./js/jQuery.js"></script>
+    <script>
+        /*Botão do menu scroll*/
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 20) {
+                $('.navigation').addClass('fix-icon');
+            }
+            else {
+                $('.navigation').removeClass('fix-icon');
+            }
+        });
+    </script>
+    <script>
+        const audio = new Audio();
+        audio.src = './sound/Rapaz (Xaropinho) - (áudio).mp3'
+    </script>
+    <script src="./js/API.js"></script>
+</body>
+
+</html>
